@@ -10,9 +10,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+
 @SpringBootTest
 @AutoConfigureMockMvc
-public class Task2JuniorTest {
+public class Task5DeveloperTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -20,9 +21,9 @@ public class Task2JuniorTest {
     @Test
     public void test() throws Exception {
 
-        mockMvc.perform(get("/task2/page?index=10"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("11"));
-    }
 
+        mockMvc.perform(get("/task5/hi"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Hellow"));
+    }
 }

@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -20,9 +21,9 @@ public class Task1JuniorTest {
     @Test
     public void test() throws Exception {
 
-        mockMvc.perform(get("/task1/books/10")
-                .content("20"))
-                .andExpect(status().isOk());
+        mockMvc.perform(get("/task1/books/10"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("20"));
     }
 
 

@@ -1,0 +1,16 @@
+1. What is HTTP ?
+2. What is REST ?
+3. What is difference between POST and GET ?
+4. What Spring module responsible for RestControllers (implementing all features)
+5. What is microservice architecture ?
+6. Is Spring controller stateless or statefull ?
+7. What is HTTP2 ? Name some methods you know
+8. What is JSON ? What is XML ? What class (by default responsible for object serialization (controllers))
+9. Is Spring controller in spring-context ?
+10. Is REST scalable and/or interoperable?
+11. What is an HttpMessageConverter in Spring REST?
+12. What does @RequestMapping annotation do?
+13. What is the difference between @Controller and @RestController?
+14. What does CRUD mean?
+15. When do you need @ResponseStatus annotation in Spring MVC?
+16. Does REST work with transport layer security (TLS)?

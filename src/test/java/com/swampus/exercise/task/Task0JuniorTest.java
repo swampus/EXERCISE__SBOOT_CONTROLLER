@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 
 import static org.springframework.test.util.AssertionErrors.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -24,8 +25,8 @@ public class Task0JuniorTest {
     public void test() throws Exception {
 
 
-        mockMvc.perform(get("/task0/hello")
-                .content("Hellow Wourld"))
-                .andExpect(status().isOk());
+        mockMvc.perform(get("/task0/hello"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Hellow Wourld"));
     }
 }
