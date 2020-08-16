@@ -23,10 +23,8 @@ public class Task0JuniorTest {
 
     @Test
     public void test() throws Exception {
-
-
         mockMvc.perform(get("/task0/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hellow Wourld"));
+                .andExpect(content().string("Hello World"));
     }
 }
